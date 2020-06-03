@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Frontend</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+
+	<script type="text/javascript" src="js/coroufredsel.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<nav>
+				<a href="" class="logo">
+					<!--<img src="images/logo.png"> -->
+					<h2>LOGO</h2>
+				</a>
+				
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Work</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Clients</a></li>
+					<li><a href="">Our Team</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+				
+			</nav>
+		</div>
+	</header> 
+
+	<section class="slider">
+		<ul class="slider-corousel" id="slider-corousel">
+			<li class="img">
+				<div class="nav_content">
+					<h3>Hello, I am</h3>
+					<h1>Mary Doe</h1>
+					<h2>CEO, Norble and marble Limited</h2>
+				</div>
+			</li>
+			<li class="img2">
+				<div class="nav_content">
+					<h3>Hello, I am</h3>
+					<h1>Mary Doe</h1>
+					<h2>CEO, Norble and marble Limited</h2>
+				</div>
+			</li>
+			<li class="img3">
+				<div class="nav_content">
+					<h3>Hello, I am</h3>
+					<h1>Mary Doe</h1>
+					<h2>CEO, Norble and marble Limited</h2>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<div class="container-fluid">
+			<div class="hero">
+				<div class="btn-box">
+					<button id="btn1" onclick="openAbout()"><i class="fa fa-home"></i> About</button>
+					<button id="btn2" onclick="openSkill()"><i class="fa fa-code"></i> Skills</button>
+					<button id="btn3" onclick="openService()"><i class="fa fa-archive"></i> Services</button>
+					<button id="btn4" onclick="openInterview()"><i class="fa fa-archive"></i> Interview</button>
+					<button id="btn5" onclick="openAward()"><i class="fa fa-archive"></i> Award</button>
+					
+				</div>
+				<div id="content1" class="content">
+					<div class="about">
+						<div class="about-img">
+							<img src="./images/image1.jpeg">
+						</div>
+						<div class="about-content">
+							<h5>About me</h5>
+							<h3>About</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima, reiciendis laboribus tua eventurum. Corporis, primorum. Discedere causa nocet sentiri uberiora. Reprehensiones torquatum variis disciplinam, movere, aiunt aeterno mente certamen ferentur istam triario beata p, habeo platonis ortum directam tollatur succumbere, vigiliae ordinem vias, debent gubernatoris turpe accedis </p>
+							<a href="" class="btn btn-primary"> Learn More</a>
+						</div>
+					</div>
+						
+				</div>
+				<div id="content2" class="content">
+					<div class="row">	
+						<div class="col-lg-6 col-md-6 col-sm-12 skill">
+							<div class="text">
+								<p>Communicatio</p>
+								<p>75%</p>
+							</div>
+							<div class="bar">
+								<div class="bar-perc"></div>
+							</div>
+							
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-12 skill">
+							<div class="text">
+								<p>Communicatio</p>
+								<p>75%</p>
+							</div>
+							<div class="bar">
+								<div class="bar-perc"></div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-12 skill">
+							<div class="text">
+								<p>Communicatio</p>
+								<p>75%</p>
+							</div>
+							<div class="bar">
+								<div class="bar-perc"></div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 skill">
+							<div class="text">
+								<p>Communicatio</p>
+								<p>75%</p>
+							</div>
+							<div class="bar">
+								<div class="bar-perc"></div>
+							</div>
+						</div>
+					</div>
+						
+				</div>
+				<div id="content3" class="content">
+					<div class="row service">
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<i class="fa fa-home"></i>
+							<h3>Service one</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima,</p>
+						</div>
+
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<i class="fa fa-home"></i>
+							<h3>Service one</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima,</p>
+						</div>
+
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<i class="fa fa-home"></i>
+							<h3>Service one</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima,</p>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<i class="fa fa-home"></i>
+							<h3>Service one</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima,</p>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<i class="fa fa-home"></i>
+							<h3>Service one</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima,</p>
+						</div>
+					</div>
+
+
+				</div>
+				<div id="content4" class="content">
+					<div class="row">
+						<div class="col-lg-6 col-md-12">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Z4hknCDVBfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="col-lg-6 col-md-12">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Z4hknCDVBfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="col-lg-6 col-md-12">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Z4hknCDVBfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="col-lg-6 col-md-12">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Z4hknCDVBfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div id="content5" class="content">
+					<h1>learn Award</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="services">
+		
+		<div class="container">
+			<div class="title text-center">
+				<h2>MASTER EVERY AREA OF YOUR LIFE</h2>
+				<p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12 service-img">
+					<img src="images/image1.jpeg">
+					<h3>Life coaching</h3>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 service-img">
+					<img src="images/image2.jpeg">
+					<h3>Private Coaching</h3>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 service-img">
+					<img src="images/image3.jpeg">
+					<h3>Trainig Programs</h3>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 service-img">
+					<img src="images/image1.jpeg">
+					<h3>Trainig Programs</h3>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 service-img">
+					<img src="images/image2.jpeg">
+					<h3>Life coaching</h3>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 service-img">
+					<img src="images/image3.jpeg">
+					<h3>Life coaching</h3>
+				</div>
+			
+			</div>
+		</div>
+
+	</section>
+
+
+	<section class="testimonals">
+		<div class="container">
+			<h1>Testimonals</h1>
+			<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<div class="profile">
+						<img src="images/image1.jpeg" class="user">
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+						</blockquote>
+						<h3>Hashim athman <span>Ceo </span></h3>
+					</div>
+				</div>
+
+				<div class="col-md-4 text-center">
+					<div class="profile">
+						<img src="images/image1.jpeg" class="user">
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+						</blockquote>
+						<h3>Hashim athman <span>Ceo </span></h3>
+					</div>
+				</div>
+
+				<div class="col-md-4 text-center">
+					<div class="profile">
+						<img src="images/image1.jpeg" class="user">
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+						</blockquote>
+						<h3>Hashim athman <span>Ceo </span></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	 
+	<footer>
+		<div class="footer-topC2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12 segment-oneC2 md-mb-30C2 sm-mb-30C2">
+						<h3>Binti Kahawa</h3>
+						<p>Binti Kahawa. and partners are working on women needs and helping to provide tools, training and resources to enable them accomplish their goals sustainably.</p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 segment-twoC2 md-mb-30C2 sm-mb-30C2">
+						<h2>Binti Kahawa</h2>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="story.html">Our Story</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 segment-threeC2 sm-mb-30C2">
+						<h2>Follow Us</h2>
+						<p>Please follow us in our social media links down below</p>
+						<a href=""><i class="fa fa-facebook"></i></a>
+						<a href=""><i class="fa fa-twitter"></i></a>
+						<a href=""><i class="fa fa-linkedin"></i></a>
+						<a href=""><i class="fa fa-pinterest"></i></a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 segment-fourC2 sm-mb-30C2">
+						<h2>Our Newsletter</h2>
+						<p> </p>
+						<form>
+							<input type="email" name="">
+							<input type="submit" value="subscribe">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class="footer-bottomC2"> All Right reserved by &copy; bintikahawa.co.ke 2020</p>
+	</footer>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<script type="text/javascript">
+		var content1 = document.getElementById("content1")
+		var content2 = document.getElementById("content2")
+		var content3 = document.getElementById("content3")
+		var content4 = document.getElementById("content4")
+		var content5 = document.getElementById("content5")
+
+		var btn1 = document.getElementById("btn1")
+		var btn2 = document.getElementById("btn2")
+		var btn3 = document.getElementById("btn3")
+		var btn4 = document.getElementById("btn4")
+		var btn5 = document.getElementById("btn5")
+
+		function openAbout(){
+			content1.style.transform = "translateX(0)";
+			content2.style.transform = "translateX(1000%)";
+			content3.style.transform = "translateX(1000%)";
+			content4.style.transform = "translateX(1000%)";
+			content5.style.transform = "translateX(1000%)";
+
+		}
+
+		function openSkill(){
+			content1.style.transform = "translateX(1000%)";
+			content2.style.transform = "translateX(0)";
+			content3.style.transform = "translateX(1000%)";
+			content4.style.transform = "translateX(1000%)";
+			content5.style.transform = "translateX(1000%)";
+		}
+
+		function openService(){
+			content1.style.transform = "translateX(1000%)";
+			content2.style.transform = "translateX(1000%)";
+			content3.style.transform = "translateX(0)";
+			content4.style.transform = "translateX(1000%)";
+			content5.style.transform = "translateX(1000%)";
+		}
+
+		function openInterview(){
+			content1.style.transform = "translateX(1000%)";
+			content2.style.transform = "translateX(1000%)";
+			content3.style.transform = "translateX(1000%)";
+			content4.style.transform = "translateX(0)";
+			content5.style.transform = "translateX(1000%)";
+		}
+
+		function openAward(){
+			content1.style.transform = "translateX(1000%)";
+			content2.style.transform = "translateX(1000%)";
+			content3.style.transform = "translateX(1000%)";
+			content4.style.transform = "translateX(1000%)";
+			content5.style.transform = "translateX(0)";
+		}
+	</script>
+</body>
+</html>
