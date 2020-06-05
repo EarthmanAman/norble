@@ -70,6 +70,87 @@
 		</ul>
 	</section>
 
+	<br><br><br>
+	<section  class="tabs">
+		<div class="container">
+			<div>
+			<div class="tab-buttons">
+				<button onclick="openAbout()">About</button>
+				<button onclick="openSkill()">Skills</button>
+			</div>
+			<div id="about" class="section-padding about-section">
+				<div class="about-text">
+					<div class="section_title">
+						<br>
+						<div class="section_subtitle">About us</div>
+						<h2 class="section_main_title">WE ARE <strong>CREATIVE</strong></h2>
+					</div>
+
+
+
+					<div class="about-item">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima, reiciendis laboribus tua eventurum. Corporis, primorum. Discedere causa nocet sentiri uberiora. Reprehensiones torquatum variis disciplinam, movere, aiunt aeterno mente certamen </p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima, reiciendis laboribus tua  </p>
+						<div class="hgt 20"></div>
+						<div class="home-button"><br>
+							<a href="" class="btn-color-background">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="video">
+					<div class="about-box">
+						<div class="box-overlay">
+							<a href="www.youtube.com" class="videopopup">
+								<img src="images/person.jpg" alt="about image">
+								<span class="sonar-wrapper">
+									<span class="sonar-emmiter">
+										<i class="fa fa-play"></i>
+										<div class="sonar-wave"></div>
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="team" class="section-padding skill-area">
+				<div class="skills-desc">
+					<div class="section-title">
+						<div class="section_subtitle">About</div>
+						<h2>Our company <strong>Norble</strong></h2>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet</p>
+				</div>
+
+				<div class="skills-area">
+					<div id="skills">
+						<div class="skillbar clearfix" data-percent="95%">
+							<div class="skillbar-title"><b>Communication</b>
+							<span class="pull-right" skillbar-percent>95%</span></div>
+							<div class="skillbar-bar"></div>
+						</div>
+
+						<div class="skillbar clearfix" data-percent="95%">
+							<div class="skillbar-title"><b>Organization</b>
+							<span class="pull-right" skillbar-percent>95%</span></div>
+							<div class="skillbar-bar"></div>
+						</div>
+
+						<div class="skillbar clearfix" data-percent="95%">
+							<div class="skillbar-title"><b>Coaching</b>
+							<span class="pull-right" skillbar-percent>95%</span></div>
+							<div class="skillbar-bar"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	</section>
+	<br><br><br><br><br><br><br>
 	<!--
 	<section>
 		<div class="container-fluid">
@@ -197,10 +278,10 @@
 	</section>
 	-->
 
-	<section id="team" class="section-padding skill-area">
+	<section  class="">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
+			<div id="team" class="section-padding skill-area">
+				<div class="skills-desc">
 					<div class="section-title">
 						<div class="section_subtitle">About</div>
 						<h2>Our company <strong>Norble</strong></h2>
@@ -208,7 +289,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet</p>
 				</div>
 
-				<div class="col-sm-6">
+				<div class="skills-area">
 					<div id="skills">
 						<div class="skillbar clearfix" data-percent="95%">
 							<div class="skillbar-title"><b>Communication</b>
@@ -231,6 +312,7 @@
 				</div>
 			</div>
 
+			<!--
 			<div class="row">
 			<div class="col-lg-3 col-md-6 col-sm-12">
 				<div class="team-item">
@@ -254,7 +336,7 @@
 					<iframe src="https://www.youtube.com/embed/tbnzAVRZ9Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		</div> 
 
 		
@@ -532,58 +614,23 @@
 		});
      </script>
 	<script type="text/javascript">
-		var content1 = document.getElementById("content1")
-		var content2 = document.getElementById("content2")
-		var content3 = document.getElementById("content3")
-		var content4 = document.getElementById("content4")
-		var content5 = document.getElementById("content5")
-
-		var btn1 = document.getElementById("btn1")
-		var btn2 = document.getElementById("btn2")
-		var btn3 = document.getElementById("btn3")
-		var btn4 = document.getElementById("btn4")
-		var btn5 = document.getElementById("btn5")
+		var about = document.getElementById("about")
+		var skills = document.getElementById("team")
+		
 
 		function openAbout(){
-			content1.style.transform = "translateX(0)";
-			content2.style.transform = "translateX(1000%)";
-			content3.style.transform = "translateX(1000%)";
-			content4.style.transform = "translateX(1000%)";
-			content5.style.transform = "translateX(1000%)";
+			about.style.transform = "translateX(0)";
+			skills.style.transform = "translateX(1000%)";
+			
 
 		}
 
 		function openSkill(){
-			content1.style.transform = "translateX(1000%)";
-			content2.style.transform = "translateX(0)";
-			content3.style.transform = "translateX(1000%)";
-			content4.style.transform = "translateX(1000%)";
-			content5.style.transform = "translateX(1000%)";
+			about.style.transform = "translateX(1000%)";
+			skills.style.transform = "translateX(0)";
+			
 		}
 
-		function openService(){
-			content1.style.transform = "translateX(1000%)";
-			content2.style.transform = "translateX(1000%)";
-			content3.style.transform = "translateX(0)";
-			content4.style.transform = "translateX(1000%)";
-			content5.style.transform = "translateX(1000%)";
-		}
-
-		function openInterview(){
-			content1.style.transform = "translateX(1000%)";
-			content2.style.transform = "translateX(1000%)";
-			content3.style.transform = "translateX(1000%)";
-			content4.style.transform = "translateX(0)";
-			content5.style.transform = "translateX(1000%)";
-		}
-
-		function openAward(){
-			content1.style.transform = "translateX(1000%)";
-			content2.style.transform = "translateX(1000%)";
-			content3.style.transform = "translateX(1000%)";
-			content4.style.transform = "translateX(1000%)";
-			content5.style.transform = "translateX(0)";
-		}
 	</script>
 </body>
 </html>
