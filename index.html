@@ -6,8 +6,8 @@
 	<title>Frontend</title>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -18,28 +18,65 @@
 
 
 	<script type="text/javascript" src="js/coroufredsel.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	
 </head>
 <body>
 
 	<header>
-		<div class="container">
-			<nav>
-				<a href="" class="logo">
-					<!--<img src="images/logo.png"> -->
-					<h2>LOGO</h2>
-				</a>
-				
-				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Work</a></li>
-					<li><a href="">Services</a></li>
-					<li><a href="">Clients</a></li>
-					<li><a href="">Our Team</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-				
+		<div class="container-fluid" style="padding:0;">
+			<nav class="navbar navbar-expand-lg">
+			 <a class="navbar-brand" href="index.html" style="background:aliceblue; margin:20px;">
+			    <img src="images/logo.png" width="120" height="80" alt="" loading="lazy">
+			 </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			    
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          About Us
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">About</a>
+			          <a class="dropdown-item" href="#">Mission</a>
+			          <a class="dropdown-item" href="#">Vision</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Something else here</a>
+			        </div>
+			      </li>
+
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Services
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Our Projects</a>
+			          <a class="dropdown-item" href="#">Clients</a>
+			          <a class="dropdown-item" href="#">Testimonials</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Something else here</a>
+			        </div>
+			      </li>
+
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Blog</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Contact Us</a>
+			      </li>
+			    </ul>
+			    
+			  </div>
 			</nav>
 		</div>
 	</header> 
@@ -47,21 +84,21 @@
 	<section class="slider">
 		<ul class="slider-corousel" id="slider-corousel">
 			<li class="img">
-				<div class="nav_content">
+				<div class="nav_content wow slideInUp slow">
 					<h3>Hello, I am</h3>
 					<h1>Mary Doe</h1>
 					<h2>CEO, Norble and marble Limited</h2>
 				</div>
 			</li>
 			<li class="img2">
-				<div class="nav_content">
+				<div class="nav_content wow slideInUp slow">
 					<h3>Hello, I am</h3>
 					<h1>Mary Doe</h1>
 					<h2>CEO, Norble and marble Limited</h2>
 				</div>
 			</li>
 			<li class="img3">
-				<div class="nav_content">
+				<div class="nav_content wow slideInUp slow">
 					<h3>Hello, I am</h3>
 					<h1>Mary Doe</h1>
 					<h2>CEO, Norble and marble Limited</h2>
@@ -79,7 +116,7 @@
 				<button onclick="openSkill()">Skills</button>
 			</div>
 			<div id="about" class="section-padding about-section">
-				<div class="about-text">
+				<div class="about-text wow slideInLeft slow">
 					<div class="section_title">
 						<br>
 						<div class="section_subtitle">About us</div>
@@ -98,10 +135,10 @@
 					</div>
 				</div>
 
-				<div class="video">
+				<div class="video wow slideInRight">
 					<div class="about-box">
 						<div class="box-overlay">
-							<a href="www.youtube.com" class="videopopup">
+							<a target="blank" href="https://www.youtube.com" class="videopopup">
 								<img src="images/person.jpg" alt="about image">
 								<span class="sonar-wrapper">
 									<span class="sonar-emmiter">
@@ -120,7 +157,7 @@
 		<div id="team" class="section-padding skill-area">
 				<div class="skills-desc">
 					<div class="section-title">
-						<div class="section_subtitle">About</div>
+						<div class="section_subtitle">SKILLS</div>
 						<h2>Our company <strong>Norble</strong></h2>
 					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet</p>
@@ -151,202 +188,24 @@
 	</div>
 	</section>
 	<br><br><br><br><br><br><br>
-	<!--
-	<section>
-		<div class="container-fluid">
-			<div class="hero">
-				<div class="btn-box">
-					<button id="btn1" onclick="openAbout()"><i class="fa fa-home"></i> About</button>
-					<button id="btn2" onclick="openSkill()"><i class="fa fa-code"></i> Skills</button>
-					<button id="btn3" onclick="openService()"><i class="fa fa-archive"></i> Services</button>
-					<button id="btn4" onclick="openInterview()"><i class="fa fa-archive"></i> Interview</button>
-					<button id="btn5" onclick="openAward()"><i class="fa fa-archive"></i> Award</button>
-					
-				</div>
-				<div id="content1" class="content">
-					<div class="about">
-						<div class="about-img">
-							<img src="./images/image1.jpeg">
-						</div>
-						<div class="about-content">
-							<h5>About me</h5>
-							<h3>About</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima, reiciendis laboribus tua eventurum. Corporis, primorum. Discedere causa nocet sentiri uberiora. Reprehensiones torquatum variis disciplinam, movere, aiunt aeterno mente certamen ferentur istam triario beata p, habeo platonis ortum directam tollatur succumbere, vigiliae ordinem vias, debent gubernatoris turpe accedis </p>
-							<a href="" class="btn btn-primary"> Learn More</a>
-						</div>
-					</div>
-						
-				</div>
-				<div id="content2" class="content">
-					<div class="row">	
-						<div class="col-lg-6 col-md-6 col-sm-12 skill">
-							<div class="text">
-								<p>PERSEVERANCE</p>
-								<p>75%</p>
-							</div>
-							<div class="bar">
-								<div class="bar-perc"></div>
-							</div>
-							
-						</div>
-
-						<div class="col-lg-6 col-md-6 col-sm-12 skill">
-							<div class="text">
-								<p>COMMUNICATION</p>
-								<p>75%</p>
-							</div>
-							<div class="bar">
-								<div class="bar-perc"></div>
-							</div>
-						</div>
-
-						<div class="col-lg-6 col-md-6 col-sm-12 skill">
-							<div class="text">
-								<p>PROJECT MANAGEMENT</p>
-								<p>75%</p>
-							</div>
-							<div class="bar">
-								<div class="bar-perc"></div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 skill">
-							<div class="text">
-								<p>ORGANIZATION</p>
-								<p>75%</p>
-							</div>
-							<div class="bar">
-								<div class="bar-perc"></div>
-							</div>
-						</div>
-					</div>
-						
-				</div>
-				<div id="content3" class="content">
-					<div class="row service">
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<i class="fa fa-home"></i>
-							<h3>Service one</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima,</p>
-						</div>
-
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<i class="fa fa-home"></i>
-							<h3>Service one</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima,</p>
-						</div>
-
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<i class="fa fa-home"></i>
-							<h3>Service one</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima,</p>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<i class="fa fa-home"></i>
-							<h3>Service one</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima,</p>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<i class="fa fa-home"></i>
-							<h3>Service one</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima,</p>
-						</div>
-					</div>
 
 
-				</div>
-				<div id="content4" class="content">
-					<div class="row">
-						<div class="col-lg-6 col-md-12">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/8f0nIhDpXuU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-						<div class="col-lg-6 col-md-12">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/tbnzAVRZ9Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-						<div class="col-lg-6 col-md-12">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/k9zTr2MAFRg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-						<div class="col-lg-6 col-md-12">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/BABdZ5UHzvM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-				<div id="content5" class="content">
-					<h1>learn Award</h1>
-				</div>
-			</div>
+	<section class="social-media wow slideInLeft slow">
+		<div>
+			<i class="fa fa-facebook"></i>
+		</div>
+		<div>
+			<i class="fa fa-twitter"></i>
+		</div>
+		<div>
+			<i class="fa fa-instagram"></i>
 		</div>
 	</section>
-	-->
-
-	<section  class="">
-		<div class="container">
-			<div id="team" class="section-padding skill-area">
-				<div class="skills-desc">
-					<div class="section-title">
-						<div class="section_subtitle">About</div>
-						<h2>Our company <strong>Norble</strong></h2>
-					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet</p>
-				</div>
-
-				<div class="skills-area">
-					<div id="skills">
-						<div class="skillbar clearfix" data-percent="95%">
-							<div class="skillbar-title"><b>Communication</b>
-							<span class="pull-right" skillbar-percent>95%</span></div>
-							<div class="skillbar-bar"></div>
-						</div>
-
-						<div class="skillbar clearfix" data-percent="95%">
-							<div class="skillbar-title"><b>Organization</b>
-							<span class="pull-right" skillbar-percent>95%</span></div>
-							<div class="skillbar-bar"></div>
-						</div>
-
-						<div class="skillbar clearfix" data-percent="95%">
-							<div class="skillbar-title"><b>Coaching</b>
-							<span class="pull-right" skillbar-percent>95%</span></div>
-							<div class="skillbar-bar"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--
-			<div class="row">
-			<div class="col-lg-3 col-md-6 col-sm-12">
-				<div class="team-item">
-					<iframe src="https://www.youtube.com/embed/tbnzAVRZ9Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-
-			<div class="col-lg-3 col-md-6 col-sm-12">
-				<div class="team-item">
-					<iframe src="https://www.youtube.com/embed/BABdZ5UHzvM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-
-			<div class="col-lg-3 col-md-6 col-sm-12">
-				<div class="team-item">
-					<iframe src="https://www.youtube.com/embed/tbnzAVRZ9Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-12">
-				<div class="team-item">
-					<iframe src="https://www.youtube.com/embed/tbnzAVRZ9Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div> -->
-		</div> 
-
-		
-	</section>
-
 	
 	<section>
 		<div class="jumbotron jumbotron-fluid">
-		  <div class="container text-center">
-		    <h1 class="display-4">Fluid jumbotron</h1>
+		  <div class="container text-center wow slideInUp slow">
+		    <h1 class="display-4" style="color: #b19cd9">Fluid jumbotron</h1>
 		    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
 		  </div>
 		</div>
@@ -360,28 +219,28 @@
 				<p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
 			</div>
 
-			<div class="row">
-				<div class="col-lg-4 col-md-6 col-sm-12 service-img">
+			<div class="row wow">
+				<div class="col-lg-4 col-md-6 col-sm-12 service-img wow slideInUp slow">
 					<img src="images/image1.jpeg">
 					<h3>Life coaching</h3>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 service-img">
+				<div class="col-lg-4 col-md-6 col-sm-12 service-img wow slideInUp slow">
 					<img src="images/image2.jpeg">
 					<h3>Private Coaching</h3>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 service-img">
+				<div class="col-lg-4 col-md-6 col-sm-12 service-img wow slideInUp slow">
 					<img src="images/image3.jpeg">
 					<h3>Trainig Programs</h3>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 service-img">
+				<div class="col-lg-4 col-md-6 col-sm-12 service-img wow slideInUp slow">
 					<img src="images/image1.jpeg">
 					<h3>Trainig Programs</h3>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 service-img">
+				<div class="col-lg-4 col-md-6 col-sm-12 service-img wow slideInUp slow">
 					<img src="images/image2.jpeg">
 					<h3>Life coaching</h3>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 service-img">
+				<div class="col-lg-4 col-md-6 col-sm-12 service-img wow slideInUp slow">
 					<img src="images/image3.jpeg">
 					<h3>Life coaching</h3>
 				</div>
@@ -391,14 +250,89 @@
 
 	</section>
 
+	<br><br><br><br><br>
+
+
+	<section  class="tabs bio">
+		<div class="container">
+
+			<div class="title text-center">
+				<h2>MY STORY</h2>
+				<p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+			</div><br><br>
+
+			<div>
+			<div id="about" class="section-padding about-section">
+				<div class="about-text wow slideInRight slow">
+					<div class="section_title">
+						<br>
+				
+						<h2 class="section_main_title">WE ARE <strong>CREATIVE</strong></h2>
+					</div>
+
+
+
+					<div class="about-item">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima, reiciendis laboribus tua eventurum. Corporis, primorum. Discedere causa nocet sentiri uberiora. Reprehensiones torquatum variis disciplinam, movere, aiunt aeterno mente certamen </p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provocatus occulte magnis horrida prima, reiciendis laboribus tua  </p>
+						<div class="hgt 20"></div>
+						<div class="home-button"><br>
+							<a href="" class="btn-color-background">FULL BIO</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="video wow slideInLeft slow">
+					<div class="about-box">
+						<div class="box-overlay">
+							<a target="blank" href="https://www.youtube.com" class="videopopup">
+								<img src="images/image1.jpeg" alt="about image">
+								<span class="sonar-wrapper">
+									<span class="sonar-emmiter">
+										<i class="fa fa-play"></i>
+										<div class="sonar-wave"></div>
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
+	</section>
+
+	<br><br><br><br>
+
+	<section class="videos">
+		<div class="container">
+			<div class="row videos-list">
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<iframe src="https://www.youtube.com/embed/vMCulttUYeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<iframe src="https://www.youtube.com/embed/p0jxCSxuOg8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<iframe src="https://www.youtube.com/embed/vMCulttUYeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<iframe src="https://www.youtube.com/embed/vMCulttUYeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section class="testimonals">
 		
 		<div class="demo">
 		    <div class="container">
 		    	<div class="text-center">
-		    		<h2>TESTIMONALS</h2>
-		    		<p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet </p>
+		    		<h2>TESTIMONIALS</h2>
+		    		<p class="sub-heading">This is what our clients have to say</p>
 		    	</div>
 		        <div class="row">
 		            <div class="col-md-12">
@@ -406,77 +340,78 @@
 		                    <div class="testimonial">
 		                        <span class="icon fa fa-quote-left"></span>
 		                        <p class="description">
-		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.
+		                            Makandi  is incredibly supportive and knowledgeable, hold me accountable, gives me honest feedback and sets weekly goals with me to keep me on track. She is authentic and relatable and i always feel amazing after our sessions. I am so grateful that I took the opportunity to work and grow with Makandi. 
 		                        </p>
 		                        <div class="testimonial-content">
 		                            <div class="pic"><img src="images/image3.jpeg" class=""alt=""></div>
-		                            <h3 class="title">williamson</h3>
-		                            <span class="post">Web Developer</span>
+		                            <h3 class="title">Samuel M</h3>
+		                            <span class="post">Nairobi, Kenya</span>
 		                        </div>
 		                    </div>
 		                    <div class="testimonial">
 		                        <span class="icon fa fa-quote-left"></span>
 		                        <p class="description">
-		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.
+		                           Makandi has really helped me to change a lot of aspects about my outlook of life. With her help, I became more positive and happy person. She is both warm hearted and incredibly kind while being completely authentic and honest at the same time. Makandi is motivating me to get things going for myself, but also a helping hand. I feel she is a teacher and a friend. I always look forward to my sessions with her. 
 		                        </p>
 		                        <div class="testimonial-content">
 		                            <div class="pic"><img src="images/image2.jpeg" alt=""></div>
-		                            <h3 class="title">Kristina</h3>
-		                            <span class="post">Web Designer</span>
+		                            <h3 class="title">Naomi K</h3>
+		                            <span class="post">Nairobi, Kenya</span>
 		                        </div>
 		                    </div>
 		                    <div class="testimonial">
 		                        <span class="icon fa fa-quote-left"></span>
 		                        <p class="description">
-		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.
+		                           Makandi is such a delight to work with. She brings a mix of credible knowledge and vision to her work with an openness to sharing her own experiences that vastly enriches her coaching sessions. She is the epitome of a professional with a heartfelt authentic demeanour that is a winning combination. She is welcoming and friendly and is a savvy guide and aide to your professional concerns and dilemmas. I highly recommend working with Makandi. She will help you reach your goals.
 		                        </p>
 		                        <div class="testimonial-content">
 		                            <div class="pic"><img src="images/image1.jpeg" alt=""></div>
-		                            <h3 class="title">Steve Thomas</h3>
-		                            <span class="post">Web Developer</span>
+		                            <h3 class="title">Audrey M</h3>
+		                            <span class="post">London, UK</span>
 		                        </div>
 		                    </div>
 		                       
-		                       <div class="testimonial">
+		                     <div class="testimonial">
 		                        <span class="icon fa fa-quote-left"></span>
 		                        <p class="description">
-		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.
+		                            Makandi  is incredibly supportive and knowledgeable, hold me accountable, gives me honest feedback and sets weekly goals with me to keep me on track. She is authentic and relatable and i always feel amazing after our sessions. I am so grateful that I took the opportunity to work and grow with Makandi. 
 		                        </p>
 		                        <div class="testimonial-content">
-		                            <div class="pic"><img src="images/image3.jpeg" alt=""></div>
-		                            <h3 class="title">Steve Thomas</h3>
-		                            <span class="post">Web Developer</span>
+		                            <div class="pic"><img src="images/image3.jpeg" class=""alt=""></div>
+		                            <h3 class="title">Samuel M</h3>
+		                            <span class="post">Nairobi, Kenya</span>
 		                        </div>
-		                    </div>     
-		                       <div class="testimonial">
+		                    </div>
+		                    <div class="testimonial">
 		                        <span class="icon fa fa-quote-left"></span>
 		                        <p class="description">
-		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.
+		                           Makandi has really helped me to change a lot of aspects about my outlook of life. With her help, I became more positive and happy person. She is both warm hearted and incredibly kind while being completely authentic and honest at the same time. Makandi is motivating me to get things going for myself, but also a helping hand. I feel she is a teacher and a friend. I always look forward to my sessions with her. 
 		                        </p>
 		                        <div class="testimonial-content">
 		                            <div class="pic"><img src="images/image2.jpeg" alt=""></div>
-		                            <h3 class="title">Steve Thomas</h3>
-		                            <span class="post">Web Developer</span>
+		                            <h3 class="title">Naomi K</h3>
+		                            <span class="post">Nairobi, Kenya</span>
 		                        </div>
-		                    </div>     
-		                       <div class="testimonial">
+		                    </div>
+		                    <div class="testimonial">
 		                        <span class="icon fa fa-quote-left"></span>
 		                        <p class="description">
-		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.
+		                           Makandi is such a delight to work with. She brings a mix of credible knowledge and vision to her work with an openness to sharing her own experiences that vastly enriches her coaching sessions. She is the epitome of a professional with a heartfelt authentic demeanour that is a winning combination. She is welcoming and friendly and is a savvy guide and aide to your professional concerns and dilemmas. I highly recommend working with Makandi. She will help you reach your goals.
 		                        </p>
 		                        <div class="testimonial-content">
 		                            <div class="pic"><img src="images/image1.jpeg" alt=""></div>
-		                            <h3 class="title">Steve Thomas</h3>
-		                            <span class="post">Web Developer</span>
+		                            <h3 class="title">Audrey M</h3>
+		                            <span class="post">London, UK</span>
 		                        </div>
 		                    </div>
+		                       
 		                </div>
 		            </div>
 		        </div>
 		    </div>
 		</div>
 
-	</section>
+	
 
 
 	<div class="demo">
@@ -556,17 +491,24 @@
         </div>
     </div>
 </div>
-	 
-	<footer>
+</section> <br><br><br>
+
+
+<section>
+	
+
+</section>
+
+<footer>
 		<div class="footer-topC2">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 col-sm-6 col-xs-12 segment-oneC2 md-mb-30C2 sm-mb-30C2">
-						<h3>Binti Kahawa</h3>
-						<p>Binti Kahawa. and partners are working on women needs and helping to provide tools, training and resources to enable them accomplish their goals sustainably.</p>
+						<h3>Norble and Marble</h3>
+						<p></p>
 					</div>
 					<div class="col-md-3 col-sm-6 col-xs-12 segment-twoC2 md-mb-30C2 sm-mb-30C2">
-						<h2>Binti Kahawa</h2>
+						<h2>Norble and Marble</h2>
 						<ul>
 							<li><a href="#">Home</a></li>
 							<li><a href="about.html">About</a></li>
@@ -593,7 +535,7 @@
 				</div>
 			</div>
 		</div>
-		<p class="footer-bottomC2"> All Right reserved by &copy; bintikahawa.co.ke 2020</p>
+		<p class="footer-bottomC2"> All Right reserved by &copy; norbleandmarble.co.ke 2020</p>
 	</footer>
 
 
@@ -631,6 +573,11 @@
 			
 		}
 
+	</script>
+
+	<script src="js/wow.min.js"></script>
+	<script>
+	 	new WOW().init();
 	</script>
 </body>
 </html>
