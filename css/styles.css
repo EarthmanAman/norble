@@ -409,11 +409,15 @@ body {
 	order:2;
 }
 
+.videos {
+	background: #e9ecef;
+	padding-bottom: 40px; 
+} 
 .videos-list {
 	
 }
 .videos-list div {
-	padding: 10px;
+	
 }
 @keyframes sonarWave{
 	from {
