@@ -253,10 +253,10 @@ body {
 
 .tabs {
 	position: relative;
-	height: 300px;
+	height: 500px;
 }
 .tab-buttons button{
-	width: 100px;
+	width: 140px;
 	padding-left:30px;
 	padding-right:30px;
 	padding-top: 5px;
@@ -667,6 +667,168 @@ iframe {
 ..service-img img:hover, h3 {
 	color: black
 }
+
+
+.services-item {
+	padding:0;
+}
+
+.services-item span {
+	float: left;
+	font-size: 45px;
+	color: #bfa67a;
+	line-height: 45px;
+}
+
+.services-single-item {
+	margin-left: 65px;
+}
+
+.services-heading {
+	margin-bottom: 8px;
+	padding-bottom: 10px;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+
+
+.gaps {
+	margin-top: 50px;
+}
+
+
+/****************PRICING*************************/
+
+.price {
+	padding-bottom: 50px;
+}
+.price .item {
+	height: 550px;
+	padding: 50px 15px;
+	background-color: white;
+	box-shadow: 0px 15px 40px -5px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+.price .type h4 {
+	font-size: 16px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.price .value {
+	margin-bottom: 30px;
+}
+
+.price .value h3 {
+	font-size: 40px;
+	display: inline-block;
+	position: relative;
+	font-weight: bold;
+	color: black;
+}
+
+.price . .active h3 {
+	color: white;
+}
+.price .value h3 span {
+	font-size: 12px;
+	position: absolute;
+	top: 0;
+	left: -27px;
+	color: black;
+
+}
+
+.price .features {
+	margin-bottom: 30px;
+}
+
+.price .features li {
+	font-size: 13px;
+	color: #777;
+	margin-bottom: 12px;
+}
+
+.price .features li:last-child {
+	margin-bottom: 0;
+}
+
+.price .active {
+	box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.5);
+	background-color: #1a2373;
+	background: linear-gradient(linear, left top, left bottom, from(#b19cd9), to(#7856bb));
+	background: linear-gradient(to bottom, #7856bb, #b19cd9);
+	color: white;
+}
+
+.price .active .features li {
+	color: #eee;
+}
+
+.price .active .butn span {
+	color: white;
+}
+
+.price .butn {
+	padding: 10px 30px;
+	border-radius: 50px;
+	color: white;
+}
+
+.price .butn span {
+	font-size: 12px;
+}
+
+.butn-bg {
+	background: #1a2373;
+	border-color: : #1a2373;
+	color: white;
+}
+
+.price span a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.price ul li {
+	list-style: none;
+	font-weight: bold;
+}
+
+.price ul {
+	margin-left: -40px;
+}
+
+
+/****************  FEATURES  *************************/
+
+.features-area {
+	padding-bottom: 70px;
+}
+
+.features-title {
+	margin-bottom: 30px;
+}
+
+.features-wrapper {
+	margin-bottom: 20px;
+}
+.features-text h3 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 13px;
+	color: #b19cd9
+}
+
+.features-text p {
+	margin-bottom: 0;
+	line-height: 28px;
+}
+
 .testimonals {
 	margin: 50px auto;
 	background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/t.jpg);
