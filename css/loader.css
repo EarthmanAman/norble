@@ -1,0 +1,83 @@
+body {
+	/*background-image: url(../images/image1.jpeg);
+	background-size: cover; */
+	background:#b19cd9;
+}
+
+blockquote {
+	font-size: 25px;
+}
+#main h1 {
+	font-size: 70px;
+	font-weight: 700;
+	font-family: tahoma;
+	margin-bottom: 15px;
+}
+#main {
+	width: 100vw;
+	height: 100vh;
+	font-family: arial;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#main .container {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+
+#main .loading {
+	color: #34495e;
+	font-size: 3.5rem;
+	text-transform: uppercase;
+}
+
+#main .circle {
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: #c5cace;
+	border-radius: 50%;
+	margin-left: 1rem;
+	position: relative;
+	animation-name: jump;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+#main .circle:nth-child(3) {
+	animation-delay: 0.3s;
+}
+
+#main .circle:nth-child(4) {
+	animation-delay: 0.6s;
+}
+
+@keyframes jump {
+	0% {
+		top: 0rem;
+		background-color: #fb151a;
+	}
+
+	25% {
+		top: -3rem;
+		background-color: deepskyblue;
+	}
+
+	50% {
+		top: 0rem;
+		background-color: deepskyblue;
+	}
+
+	75% {
+		top: -3rem;
+		background-color: #fb151a;
+	}
+
+	100% {
+		top: 0rem;
+		background-color: lawngreen;
+	}
+
+}
